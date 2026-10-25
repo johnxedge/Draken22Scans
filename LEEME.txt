@@ -1,0 +1,6 @@
+DRAKEN22 SCANS — CATÁLOGO ESTÁTICO PARA ADMINISTRAR DESDE GITHUB
+
+El catálogo está en catalogo.js. Las portadas van en portadas/. Para cambiar textos y diseño, usa index.html y styles.css. La guía del sitio está en administrar.html y ADMINISTRACION.md.
+
+El formulario usa una función Netlify; necesita las variables de entorno de Resend descritas en DIAGNOSTICO_FORMULARIO.md.
+Para previsualizar HTML/JS localmente, usa un servidor local. Las funciones de correo de Netlify requieren ejecutar el proyecto con Netlify CLI o desplegarlo en Netlify.

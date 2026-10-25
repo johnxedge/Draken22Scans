@@ -1,0 +1,1 @@
+Guarda aquí las portadas de los mangas (JPG, PNG o WebP). Luego referencia cada imagen en catalogo.js, por ejemplo: image_url: 'portadas/dragon-ball-af.jpg'.

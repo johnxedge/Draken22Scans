@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b0f">
+  <title>Draken22 Scans — Manga de Dragon Ball en español</title>
+  <meta name="description" content="Explora mangas de Dragon Ball traducidos al español, consulta su estado y solicita nuevas traducciones.">
+  <meta property="og:title" content="Draken22 Scans">
+  <meta property="og:description" content="Mangas de Dragon Ball traducidos al español y nuevas solicitudes.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="nav-inner wrap">
+      <a class="brand" href="index.html" aria-label="Draken22 Scans, inicio"><img src="assets/logo-draken22.png" alt="Draken22 Scans"></a>
+      <div class="nav-links"><a class="nav-link active" href="#inicio">Inicio</a><a class="nav-link" href="#catalogo">Mangas</a><button id="open-request" class="nav-link nav-request">Solicitar manga</button><a class="nav-link" href="#footer">Contacto</a></div>
+      <label class="nav-search"><span class="sr-only">Buscar mangas</span><input id="search" class="field search" placeholder="Buscar mangas..." aria-label="Buscar mangas"><span class="search-icon" aria-hidden="true">⌕</span></label>
+      <div class="nav-actions"><button id="add-manga" class="btn-secondary hidden">＋ Agregar manga</button><button id="sign-out" class="link-button hidden">Salir</button></div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <img class="hero-bg" src="assets/hero.jpg" alt="" aria-hidden="true">
+    <div class="hero-overlay"></div><div class="hero-grid"></div>
+    <div class="hero-content wrap">
+      <img class="hero-logo" src="assets/logo-draken22.png" alt="Draken22 Scans">
+      <p class="hero-subtitle">MANGAS DE <strong>DRAGON BALL</strong> · TRADUCIDOS AL ESPAÑOL</p>
+      <div class="hero-search-wrap"><span class="hero-search-icon" aria-hidden="true">⌕</span><input id="hero-search" class="field hero-search" placeholder="Buscar mangas de Dragon Ball..." aria-label="Buscar mangas de Dragon Ball"><button id="hero-search-button" class="btn-yellow" type="button">Buscar</button></div>
+      <div class="hero-pills" role="group" aria-label="Filtrar mangas"><button class="pill pill-active" data-filter="todos">Todos</button><button class="pill" data-filter="completo"><span class="status-dot green"></span> Traducidos / completos</button><button class="pill" data-filter="produccion"><span class="status-dot blue"></span> En proceso</button></div>
+      <button id="open-request-side" class="btn-red"><span aria-hidden="true">➤</span> Pedir manga</button>
+    </div>
+  </header>
+
+  <section class="updates wrap" aria-labelledby="updates-title">
+    <div class="updates-main"><div class="section-heading"><h2 id="updates-title" class="section-title"><span class="dragon-icon">★</span> Últimos mangas</h2><a class="see-all" href="#catalogo">Ver catálogo <span>→</span></a></div><div id="updates-list" class="updates-grid"><p class="muted">Cargando mangas…</p></div></div>
+    <aside class="stats panel"><h3>Draken22 Scans</h3><p class="stats-intro">Historias del universo Dragon Ball, reunidas en un solo lugar.</p><div class="stats-row"><div class="stat-box"><b id="count-all" class="stat-num">0</b><span class="stat-label">Mangas</span></div><div class="stat-box"><b id="count-prod" class="stat-num">0</b><span class="stat-label">En proceso</span></div><div class="stat-box"><b id="count-done" class="stat-num">0</b><span class="stat-label">Completos</span></div></div><button id="open-request-stat" class="btn-yellow full" type="button">＋ Solicitar un manga</button></aside>
+  </section>
+
+  <main id="catalogo" class="wrap catalog">
+    <div class="catalog-heading"><div><p class="eyebrow">EXPLORA EL UNIVERSO</p><h2 class="section-title catalog-title">Dragon Ball</h2></div><div class="tabs" role="group" aria-label="Filtrar catálogo"><button class="tab tab-active" data-filter="todos">Todos</button><button class="tab" data-filter="produccion">En proceso</button><button class="tab" data-filter="completo">Completos</button></div></div>
+    <div id="catalog-grid" class="catalog-grid"><p class="muted">Cargando catálogo…</p></div>
+  </main>
+
+  <footer id="footer" class="footer"><img src="assets/logo-draken22.png" alt="Draken22 Scans" class="footer-logo"><p>Hecho por fans de Dragon Ball, para fans de Dragon Ball.</p><div class="footer-links"><a href="#inicio">Inicio</a><a href="#catalogo">Mangas</a><a id="team-link" class="link-button" href="administrar.html">Administración</a></div><small>© Draken22 Scans · Todos los derechos reservados.</small></footer>
+  <div id="modal-root"></div>
+</body>
+</html>
