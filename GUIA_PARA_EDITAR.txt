@@ -1,0 +1,31 @@
+GUÍA PARA EDITAR DRAKEN22 SCANS
+================================
+
+ANTES DE CAMBIAR ALGO
+- Haz una copia de seguridad de toda la carpeta del sitio.
+- Mantén las carpetas assets/, portadas/ y Fonts/ junto a los archivos principales.
+- Los nombres de archivos y rutas distinguen mayúsculas/minúsculas en muchos alojamientos.
+
+QUÉ ARCHIVO EDITAR
+- index.html: estructura de la página principal y botones externos independientes.
+- styles.css: colores, fuentes, tamaños, tarjetas, botones y diseño móvil.
+- catalogo.js: títulos, autores, tipos, portadas, estados, capítulos y volúmenes.
+- app.js: funcionamiento de búsqueda, filtros, estadísticas y tarjetas. Evita editarlo si solo quieres cambiar información.
+- administrar.html y acceso.html: contenido de sus páginas respectivas.
+- Fonts/Shonen.otf: archivo de tipografía local. No cambies su nombre salvo que también actualices la ruta en styles.css.
+- portadas/: imágenes de las obras. La ruta de cada imagen se indica en catalogo.js.
+
+CAMBIAR LOS BOTONES EXTERNOS
+En index.html busca el comentario “BOTONES EXTERNOS INDEPENDIENTES”. Cada etiqueta <a> tiene href="..." (destino) y texto entre > y </a> (nombre visible). No confundas estos botones con los datos del catálogo.
+
+CAMBIAR LA TIPOGRAFÍA
+En styles.css busca @font-face y “TIPOGRAFÍA GLOBAL”. La fuente actual se carga desde ./Fonts/Shonen.otf. Para usar otra fuente local, coloca el archivo dentro de Fonts/ y cambia la ruta y el formato en @font-face.
+
+AÑADIR UN MANGA
+En catalogo.js copia una ficha completa dentro del arreglo window.MANGAS. Cambia id por un identificador único, title, autor, tipo, imagen, description, status y los datos de capítulos/volúmenes. Guarda la portada dentro de portadas/ y escribe su ruta exacta. Revisa las comas antes de publicar.
+
+QUÉ SIGNIFICAN LAS CLASES CSS
+Las clases como .platform-button, .manga-card y .nav-link son nombres usados por HTML para aplicar estilos. Edita sus reglas en styles.css; el punto forma parte del selector CSS, no del nombre que se escribe en class="...".
+
+IMPORTANTE
+Los comentarios explican las secciones y las funciones principales. No borres etiquetas HTML, llaves de JavaScript ni comas del catálogo sin entender su función. Después de publicar cambios, recarga con Ctrl+F5.

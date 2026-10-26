@@ -1,3 +1,4 @@
+<!-- PÁGINA DE ADMINISTRACIÓN/INFORMACIÓN: contiene instrucciones y accesos relacionados con la gestión del sitio. Los estilos compartidos están en styles.css. -->
 <!doctype html>
 <html lang="es">
 
@@ -12,17 +13,31 @@
 </head>
 
 <body class="info-page">
+    <!-- CONTENIDO PRINCIPAL de esta página informativa. -->
     <main class="info-panel panel">
-        <div class="info-image" role="img" aria-label="Imagen personalizada de Draken22 Scans"></div>
-        <h1 class="info-title">Draken22</h1>
-        <p class="info-copy">Traducimos de Fan-Mangas de Dragon Ball:<br>
-            del Japonés al Español.<br>
-            del italiano al Español.<br>
-            del francés al Español.<br>
-            del portugués al Español.<br>
-            del Ingles al Español.</p>
+        <div class="info-image" id="avatar-preview" role="img" aria-label="Avatar de Draken22 Scans"></div>
+        <div class="avatar-picker">
+            <label for="avatar-choice"></label>
+            <select id="avatar-choice" aria-label="Avatar">
+                <option value="portadas/Avatar.png">Draken22</option>
+            </select>
+        </div>
+        <h1 class="info-title"></h1>
+        <p class="info-copy">Traducimos fanmangas de Dragon Ball al español para que todos puedan disfrutarlos.</p>
         <a class="btn-yellow info-home" href="index.html">← Ir a la página principal</a>
     </main>
+<script>
+(() => {
+  const select = document.getElementById('avatar-choice');
+  const preview = document.getElementById('avatar-preview');
+  select.value = 'portadas/Avatar.png';
+  const update = () => {
+    preview.style.backgroundImage = `url("${select.value}")`;
+  };
+  select.addEventListener('change', update);
+  update();
+})();
+</script>
 </body>
 
 </html>

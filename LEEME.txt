@@ -1,6 +1,35 @@
-DRAKEN22 SCANS — CATÁLOGO ESTÁTICO PARA ADMINISTRAR DESDE GITHUB
+DRAKEN22 SCANS — VERSION SIN SQL NI SUPABASE
 
-El catálogo está en catalogo.js. Las portadas van en portadas/. Para cambiar textos y diseño, usa index.html y styles.css. La guía del sitio está en administrar.html y ADMINISTRACION.md.
+Esta versión carga el catálogo desde catalogo.js y las imágenes desde la carpeta portadas/.
+No necesita config.js, Supabase ni una base de datos SQL para mostrar el catálogo.
 
-El formulario usa una función Netlify; necesita las variables de entorno de Resend descritas en DIAGNOSTICO_FORMULARIO.md.
-Para previsualizar HTML/JS localmente, usa un servidor local. Las funciones de correo de Netlify requieren ejecutar el proyecto con Netlify CLI o desplegarlo en Netlify.
+CÓMO AÑADIR UN MANGA
+1. Copia la portada dentro de la carpeta portadas/.
+2. Abre catalogo.js con un editor de texto.
+3. Añade un objeto dentro de la lista window.MANGAS, separado por comas.
+4. Escribe la ruta de la portada exactamente como está, respetando el nombre y la extensión.
+
+Ejemplo:
+{
+  id: "dragon-ball-ejemplo",
+  title: "Dragon Ball Ejemplo",
+  imagen: "portadas/dragon-ball-ejemplo.jpg",
+  description: "Descripción del manga.",
+  status: "produccion",
+  chapter: 1,
+  total: 10,
+  links: []
+}
+
+Para marcarlo completo, usa status: "completo". Para uno en producción, usa status: "produccion".
+
+IMPORTANTE SOBRE EL PANEL DE ADMINISTRACIÓN
+Sin una base de datos o un servidor que escriba archivos, una página web no puede modificar catalogo.js automáticamente desde el navegador. En esta versión, los mangas se agregan editando catalogo.js y copiando la portada a portadas/. Los controles de administración que dependían de Supabase quedan desactivados.
+
+ABRIR LA PÁGINA
+Puedes abrir index.html directamente para probarla localmente. Para publicarla en Netlify, sube el contenido de esta carpeta completo, incluida la carpeta portadas/.
+
+El formulario de solicitudes por correo sigue necesitando publicar el sitio en Netlify y configurar sus variables de correo; no utiliza SQL.
+
+
+NOTA DE DOCUMENTACIÓN: consulta GUIA_PARA_EDITAR.txt para localizar qué archivo cambiar según el ajuste que quieras realizar.

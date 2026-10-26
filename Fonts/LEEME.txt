@@ -1,15 +1,7 @@
-FUENTES LOCALES DE DRAKEN22 SCANS
+FUENTE SHONEN
 
-Esta carpeta está preparada para que el navegador cargue tipografías locales sin depender de Google Fonts.
-
-Si tienes los archivos de fuente en formato WOFF2, colócalos aquí con estos nombres:
-- Barlow-Regular.woff2
-- Barlow-Medium.woff2
-- Barlow-SemiBold.woff2
-- Barlow-Bold.woff2
-- Rajdhani-Medium.woff2
-- Rajdhani-SemiBold.woff2
-- Rajdhani-Bold.woff2
-
-El CSS ya contiene las referencias a esos archivos. Si todavía no los agregas, la página usará fuentes alternativas del sistema.
-Usa únicamente fuentes que tengas derecho a utilizar.
+La página utiliza esta fuente en toda la tipografía del sitio.
+Archivo esperado: Fonts/Shonen.otf
+La carga se configura en styles.css mediante @font-face y una regla global.
+Si reemplazas el archivo de fuente, conserva el nombre Shonen.otf o actualiza la ruta en styles.css.
+Después de publicar cambios, recarga con Ctrl+F5 para evitar la caché del navegador.
