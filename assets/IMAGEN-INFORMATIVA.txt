@@ -1,5 +1,0 @@
-IMAGEN DE LA PAGINA INFORMATIVA
-
-Para colocar tu imagen personalizada en la pagina acceso.html, guarda una imagen en esta carpeta como: imagen-traducciones.jpg
-Luego, en styles.css, el bloque .info-image tiene que usar background-image: url("assets/imagen-traducciones.jpg");
-No hay selector de archivos visible para visitantes: la imagen la cambia el administrador directamente en los archivos del proyecto.
