@@ -18,7 +18,7 @@ window.MANGAS = [
   {
     id: "dragon-ball-kakumei",
     title: "Dragon Ball Kakumei",
-    autor: "No especificado", // Cambia este texto por el nombre del autor.
+    autor: "Team Kakumei", // Cambia este texto por el nombre del autor.
     tipo: "Doujinshi",
     imagen: "portadas/DBKakumei.png",
     description: "Manga de Dragon Ball Kakumei.",
@@ -44,7 +44,7 @@ window.MANGAS = [
   // ==================================================
   {
     id: "dragon-ball-af",
-    title: "Dragon Ball AF By Toyble",
+    title: "Dragon Ball AF",
     autor: "Toyble", // Autor o artista de esta obra.
     tipo: "Doujinshi",
     imagen: "portadas/DBAFToyble.png",
@@ -70,7 +70,7 @@ window.MANGAS = [
   // ==================================================
   {
     id: "dragon-ball-afyj",
-    title: "Dragon Ball AF By Young Jijii",
+    title: "Dragon Ball AF",
     autor: "Young Jijii", // Autor o artista de esta obra.
     tipo: "Doujinshi",
     imagen: "portadas/DBAFYoungJijii.png",
